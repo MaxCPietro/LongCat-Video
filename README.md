@@ -209,7 +209,9 @@ torchrun --nproc_per_node=2 run_demo_avatar_multi_audio_to_video.py --context_pa
 torchrun --nproc_per_node=2 run_demo_avatar_multi_audio_to_video.py --context_parallel_size=2 --checkpoint_dir=./weights/LongCat-Video-Avatar-1.5 --input_json=assets/avatar/multi_example_1.json --num_segments=5 --ref_img_index=10 --mask_frame_range=3 --use_distill --model_type avatar-v1.5 --use_int8
 ```
 
-### Run Streamlit
+### Run Streamlit Front-End
+
+LongCat-Video includes a Streamlit front-end for running Text-to-Video, Image-to-Video, and Video Continuation from a guided browser UI. The interface lets you choose the model directory, pick the generation mode, review example prompts, upload source media when needed, tune generation options, preview the generated MP4, and download the result.
 
 ```shell
 # Single-GPU inference
